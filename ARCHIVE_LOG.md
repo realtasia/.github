@@ -12,6 +12,7 @@ The `realtasia` GitHub organisation and its public `.github` repository were cre
 | Archive policy | [`fc555b2`](https://github.com/realtasia/.github/commit/fc555b22663b6c5e0f46b84af3c02f3c82294a4c) | State how history will be preserved and when privacy, security or rights require a rewrite. |
 | Original orange wordmark restored | [`0935bf0`](https://github.com/realtasia/.github/commit/0935bf04a3f71411a0f5c39a1d2d4ba8d602ed1e) | Use the surviving period identity instead of manufacturing a tasteful 2026 hallucination. |
 | Wordmark added to the profile | [`ca0c533`](https://github.com/realtasia/.github/commit/ca0c5333e08a64b68fdd66e395d0d72c3e29206a) | Put the original mark back on the product's public front door. |
+| Organisation avatar restored | GitHub organisation setting, 4 September 2026 | Use the same period asset for the organisation identity; GitHub centres its square display on the wordmark's circled **T**. |
 
 ### Logo provenance
 
