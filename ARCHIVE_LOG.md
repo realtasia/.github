@@ -44,6 +44,17 @@ Screenshots from GitHub's mobile view exposed several presentation and accuracy 
 
 The untouched historical wordmark remains available separately. The light-backed header and square avatar are explicitly modern display derivatives made from that source because GitHub's dark theme and square crop otherwise conceal or mutilate it.
 
+## 4 September 2026 — permanent publication voice adopted
+
+The profile briefly described the archive through temporary workflow states such as “in progress”, “public now” and “not yet released”. That language would have made the permanent front door read like construction hoarding.
+
+| Change | Modern commit | Why |
+|---|---|---|
+| Timeless organisation profile | [`4d7c1f4`](https://github.com/realtasia/.github/commit/4d7c1f4a6cf04595b97b989988b85ad7bd6d5784) | Present the archive from its completed state: six linked repositories, their commentary, their architecture and their provenance. |
+| Timeless repository README | [`4da3e10`](https://github.com/realtasia/.github/commit/4da3e100c6d3f368fa2a06951763e68400a7d37a) | Remove operational status reporting from the repository's permanent public description. |
+
+The archive has no ceremonial completion state. Its landing pages describe the record itself; ongoing publication work belongs in this log.
+
 ## Rules for future entries
 
 Every public-history rewrite must record:
