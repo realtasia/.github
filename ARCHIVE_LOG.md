@@ -1,6 +1,6 @@
-# RealtAsia archive log
+# realTasia archive log
 
-This log records the modern work used to publish the historical RealtAsia system. It exists so that editorial additions, safety rewrites and original material remain distinguishable.
+This log records the modern work used to publish the historical realTasia system. It exists so that editorial additions, safety rewrites and original material remain distinguishable.
 
 ## 4 September 2026 — public archive established
 
