@@ -28,6 +28,19 @@ ddfed7c71f874d9cb2efbaf3a1c8cba9bd3e4d64
 
 No tracing, redesign, enlargement, recolouring or generative reconstruction was applied.
 
+## 4 September 2026 — public profile corrected after mobile review
+
+Screenshots from GitHub's mobile view exposed several presentation and accuracy failures in the first profile: the brand casing was wrong, the relative logo URL failed, Mermaid appeared as source code, and the repository table did not fit the viewport.
+
+| Change | Modern commit | Why |
+|---|---|---|
+| Mobile-safe display assets | [`3428e01`](https://github.com/realtasia/.github/commit/3428e0101cad3b010f2bb30473b0f644c5573fef) | Preserve the original artwork while providing a light-backed wordmark, square avatar crop and static architecture diagram that survive GitHub mobile and dark mode. |
+| Profile rewritten | [`8f64c8e`](https://github.com/realtasia/.github/commit/8f64c8eba8aa0159dfddd5f04b85e295df8b8cf7) | Replace future promises with present-tense publication status, identify private-source claims honestly, restore canonical `realTasia` casing and remove mobile-hostile layout. |
+| Policy casing corrected | [`f448a63`](https://github.com/realtasia/.github/commit/f448a634a6045f582b4733f8a8025998a99720d7) | Apply the historical `realTasia` styling consistently to public editorial material. |
+| Archive-log casing corrected | [`0b4d3ad`](https://github.com/realtasia/.github/commit/0b4d3ad32f959c5349d527a4f3b684cfc469a7f8) | Correct the same editorial error in this publication record. |
+
+The untouched historical wordmark remains available separately. The light-backed header and square avatar are explicitly modern display derivatives made from that source because GitHub's dark theme and square crop otherwise conceal or mutilate it.
+
 ## Rules for future entries
 
 Every public-history rewrite must record:
