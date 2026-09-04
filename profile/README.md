@@ -1,28 +1,30 @@
 <div align="center">
 
-<img src="./assets/realtasia-orange.png" alt="Original orange RealtAsia wordmark" width="360">
+<img src="https://raw.githubusercontent.com/realtasia/.github/main/profile/assets/realtasia-orange-card.png" alt="Original realTasia orange wordmark" width="360">
 
-# RealtAsia
+# realTasia
 
 ### The Right Now Real Estate
 
-**A live social-property platform built and operated in Singapore from 2012 to 2014.**
+**A live social-property platform built and operated in Singapore. Its surviving Git history runs from 2012 to 2014.**
 
-![Period](https://img.shields.io/badge/period-2012%E2%80%932014-7c3aed)
+![Period](https://img.shields.io/badge/surviving_history-2012%E2%80%932014-7c3aed)
 ![Repositories](https://img.shields.io/badge/system-6_repositories-2563eb)
-![Status](https://img.shields.io/badge/status-archival_release_in_progress-d97706)
+![Status](https://img.shields.io/badge/status-archive_in_progress-d97706)
 ![Source](https://img.shields.io/badge/source-pre--AI-059669)
 
 </div>
 
 > [!IMPORTANT]
-> The public archive is being assembled now. Its six source repositories remain private while credentials, production data and personal information are removed from every reachable revision. Historical timestamps, messages, authorship and commit topology are being preserved wherever the contents permit.
+> **This is a public archive in progress.** The organisation profile, publication policy, archive log and original wordmark are public. The six historical source repositories remain private while every reachable revision is checked for credentials, production data, personal information and third-party material. They are not yet offered here as public evidence.
 
-## What was RealtAsia?
+## What was realTasia?
 
-RealtAsia combined a professional property network, social graph and real-estate marketplace in one product.
+realTasia was a working property network, social graph and real-estate marketplace. It ran as a distributed product across six repositories.
 
-Its surviving source contains:
+It was not a mock-up, a pitch deck or an abandoned weekend prototype. People, property listings, companies, conversations, feeds, notifications, subscriptions, testimonials, media, sales attribution and paid registration all belonged to the same operating system.
+
+The surviving source contains:
 
 - a hand-built OAuth 2 service;
 - capability-driven API resources;
@@ -40,81 +42,93 @@ Its surviving source contains:
 - paid registration and PayPal IPN processing;
 - reproducible Ubuntu provisioning and repository-driven deployment.
 
-This was one product expressed through six repositories.
+That list describes the historical code in the private archival masters. It is an editorial inventory, dated 2026. It is not being passed off as text written during the product's operation.
+
+## Archive status
+
+### Public now
+
+- this organisation profile;
+- the [archive and editorial policy](https://github.com/realtasia/.github/blob/main/ARCHIVE_POLICY.md);
+- the [archive log](https://github.com/realtasia/.github/blob/main/ARCHIVE_LOG.md);
+- the original orange wordmark and its recorded provenance;
+- [The Invisible CDN We Built in 2012 for Dynamic Avatars](https://geekist.co/the-invisible-cdn-we-built-in-2012-for-dynamic-avatars/), a public technical account of one part of the system.
+
+### Preserved privately
+
+- all six original repository histories;
+- their commit dates, messages, authorship and topology;
+- modern annotated commit commentaries maintained separately from the historical source;
+- the material required to construct privacy-sanitised public mirrors.
+
+No source repository is described as published until its sanitised history can actually be inspected in this organisation.
 
 ## The system
 
-```mermaid
-flowchart TD
-    APP["app-rta<br/>Product and browser application"]
-    API["api-rta<br/>Domain, resources and OAuth"]
-    COMMON["common-rta<br/>Shared models, Ticker and notifications"]
-    QUEUE["queue-rta<br/>Background consequences"]
-    SOCKETS["sockets-rta<br/>Live delivery"]
-    DEPLOY["deployment-rta<br/>Machines and traffic"]
+<img src="https://raw.githubusercontent.com/realtasia/.github/main/profile/assets/system-map.svg" alt="Architecture map of the six realTasia repositories" width="640">
 
-    APP --> API
-    API --> COMMON
-    API --> QUEUE
-    QUEUE --> COMMON
-    COMMON --> SOCKETS
-    SOCKETS --> APP
-    DEPLOY --> APP
-    DEPLOY --> API
-    DEPLOY --> QUEUE
-```
+The diagram is a modern reading aid. It describes relationships found in the historical source; it is not a recovered period artefact.
 
 ## The six repositories
 
-| Repository | Responsibility | Public archive |
-|---|---|---|
-| `app-rta` | The product, hybrid PHP/JavaScript application and browser-side domain | Preparing |
-| `api-rta` | OAuth, resources, permissions, interactions and product rules | Preparing |
-| `common-rta` | Shared framework, domain models, Ticker and notification machinery | Preparing |
-| `queue-rta` | Durable asynchronous work, feed projection and delivery processing | Preparing |
-| `sockets-rta` | Narrow, disposable last-mile delivery to connected browsers | Preparing |
-| `deployment-rta` | Provisioning, Nginx, S3 delivery and deployment automation | Preparing |
+### `app-rta`
 
-Each repository will include a concise README, an architecture-led technical guide and an annotated commit history. Claims in the modern commentary are tied back to the relevant historical source and commits.
+The product itself: the hybrid PHP and JavaScript application, browser-side domain model, listing workflow, conversations, search, media and interface behaviour.
 
-## Contemporary context
+**Archive state:** private master preserved; public mirror not released.
 
-The dates matter.
+### `api-rta`
 
-The OAuth implementation appears in commits from 20–22 October 2012. [RFC 6749 was published in October 2012](https://www.rfc-editor.org/info/rfc6749/).
+OAuth, resources, permissions, interactions and the rules connecting people, companies, properties and activity.
 
-The resource and interaction architecture was already developing before [React's first public release on 29 May 2013](https://react.dev/versions). The larger Knockout application grew during the same year that today's component-era frontend vocabulary was only beginning to form.
+**Archive state:** private master preserved; public mirror not released.
 
-The archive does not retrofit modern terminology to manufacture novelty. It preserves what was built, when it was built and how its boundaries emerged under real operation.
+### `common-rta`
 
-## Start here
+Shared framework and domain code, including Ticker feed materialisation and the notification machinery used by the API and workers.
 
-The guided reading order will be:
+**Archive state:** private master preserved; public mirror not released.
 
-1. **`app-rta`** — the complete product and its substantial JavaScript application;
-2. **`api-rta`** — the resource grammar, OAuth boundary and social interaction model;
-3. **`common-rta`** — the shared domain, Ticker and notification records;
-4. **`queue-rta`** — the asynchronous consequences of social activity;
-5. **`sockets-rta`** — the hundred-line service that understood its job;
-6. **`deployment-rta`** — the point where source code became somebody's problem at three in the morning.
+### `queue-rta`
 
-Until the repositories are released, the first public technical account is [The Invisible CDN We Built in 2012 for Dynamic Avatars](https://geekist.co/the-invisible-cdn-we-built-in-2012-for-dynamic-avatars/).
+Durable asynchronous work: projecting social activity into feeds, constructing recipient-specific notifications and dispatching downstream delivery.
 
-## Provenance and publication
+**Archive state:** private master preserved; public mirror not released.
 
-The untouched repositories remain sealed as private archival masters. Public repositories will be privacy-sanitised mirrors.
+### `sockets-rta`
 
-The archive preserves, in descending order of importance:
+The narrow live-delivery edge between durable notification state and connected browsers. A small service displaying the increasingly rare discipline of knowing exactly what it was for.
 
-1. commit dates and messages;
-2. authorship and parent relationships;
-3. source structure and architectural behaviour;
-4. historical defects and operational evidence;
-5. the humour, panic and occasional accidental poetry of the original record.
+**Archive state:** private master preserved; public mirror not released.
 
-Where personal data, credentials or third-party rights require history to change, the alteration will be recorded with its reason. See the [archive and editorial policy](https://github.com/realtasia/.github/blob/main/ARCHIVE_POLICY.md).
+### `deployment-rta`
 
-Modern documentation is visibly modern. Historical source is never presented as though it were written in 2026.
+Provisioning, Nginx, process management, S3 delivery and the automation that turned six repositories into a running product.
+
+**Archive state:** private master preserved; public mirror not released.
+
+## Why the dates matter
+
+The surviving OAuth implementation appears in private commits dated 20–22 October 2012. [RFC 6749 was published in October 2012](https://www.rfc-editor.org/info/rfc6749/).
+
+The resource and interaction architecture was already developing before [React's first public release on 29 May 2013](https://react.dev/versions). The substantial Knockout application grew while today's component-era frontend vocabulary was only beginning to form.
+
+Those are observations from the preserved masters. They become independently checkable only when the relevant sanitised histories are public. Until then, they are labelled here for what they are.
+
+## Provenance without theatre
+
+The private masters remain untouched. Public mirrors require history rewriting wherever a reachable revision exposes personal data, credentials or material that cannot responsibly be republished.
+
+A rewritten commit receives a new SHA. The publication record therefore keeps:
+
+1. the original private commit;
+2. the corresponding public commit;
+3. the reason the contents changed;
+4. whether dates, authorship, messages or parent relationships were affected.
+
+The objective is maximum historical fidelity subject to privacy, security and rights. The code is not being modernised to flatter its author, and the defects are not being polished out of existence.
+
+The original orange wordmark demonstrates the approach. Its public copy is byte-for-byte identical to the asset in the private `app-rta` master, and both have Git blob SHA `ddfed7c71f874d9cb2efbaf3a1c8cba9bd3e4d64`. Its surviving Git provenance and modern publication are recorded in the [archive log](https://github.com/realtasia/.github/blob/main/ARCHIVE_LOG.md).
 
 ---
 
@@ -122,6 +136,6 @@ Modern documentation is visibly modern. Historical source is never presented as 
 
 Original engineering by [Jason Nathan](https://github.com/pipewrk).
 
-**Preserved with its timestamps, its architecture and its magnificent commit messages intact.**
+**Preserved with its timestamps, architecture and magnificent commit messages intact.**
 
 </div>
