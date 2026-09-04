@@ -12,7 +12,7 @@ The `realtasia` GitHub organisation and its public `.github` repository were cre
 | Archive policy | [`fc555b2`](https://github.com/realtasia/.github/commit/fc555b22663b6c5e0f46b84af3c02f3c82294a4c) | State how history will be preserved and when privacy, security or rights require a rewrite. |
 | Original orange wordmark restored | [`0935bf0`](https://github.com/realtasia/.github/commit/0935bf04a3f71411a0f5c39a1d2d4ba8d602ed1e) | Use the surviving period identity instead of manufacturing a tasteful 2026 hallucination. |
 | Wordmark added to the profile | [`ca0c533`](https://github.com/realtasia/.github/commit/ca0c5333e08a64b68fdd66e395d0d72c3e29206a) | Put the original mark back on the product's public front door. |
-| Organisation avatar restored | GitHub organisation setting, 4 September 2026 | Use the same period asset for the organisation identity; GitHub centres its square display on the wordmark's circled **T**. |
+| Initial organisation avatar attempt | GitHub organisation setting, 4 September 2026 | The complete wide wordmark was uploaded. GitHub's square crop reduced it to an unfortunate fragment resembling **al(**. Superseded after mobile review. |
 
 ### Logo provenance
 
@@ -38,6 +38,9 @@ Screenshots from GitHub's mobile view exposed several presentation and accuracy 
 | Profile rewritten | [`8f64c8e`](https://github.com/realtasia/.github/commit/8f64c8eba8aa0159dfddd5f04b85e295df8b8cf7) | Replace future promises with present-tense publication status, identify private-source claims honestly, restore canonical `realTasia` casing and remove mobile-hostile layout. |
 | Policy casing corrected | [`f448a63`](https://github.com/realtasia/.github/commit/f448a634a6045f582b4733f8a8025998a99720d7) | Apply the historical `realTasia` styling consistently to public editorial material. |
 | Archive-log casing corrected | [`0b4d3ad`](https://github.com/realtasia/.github/commit/0b4d3ad32f959c5349d527a4f3b684cfc469a7f8) | Correct the same editorial error in this publication record. |
+| Organisation avatar corrected | GitHub organisation setting, 4 September 2026 | Replace the failed wide crop with the original circled **T**, mechanically extracted and placed on a light square for dark-mode contrast. |
+| Organisation display name corrected | GitHub organisation setting, 4 September 2026 | Restore the canonical **realTasia** casing. The account handle remains GitHub's lowercase `realtasia`. |
+| `.github` description corrected | GitHub repository metadata, 4 September 2026 | Replace the incorrect **RealtAsia** spelling and describe the repository as the archive's publication record. |
 
 The untouched historical wordmark remains available separately. The light-backed header and square avatar are explicitly modern display derivatives made from that source because GitHub's dark theme and square crop otherwise conceal or mutilate it.
 
