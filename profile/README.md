@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="./assets/realtasia-orange.png" alt="Original orange RealtAsia wordmark" width="360">
+
 # RealtAsia
 
 ### The Right Now Real Estate
