@@ -1,8 +1,8 @@
-# RealtAsia Archive and Editorial Policy
+# realTasia Archive and Editorial Policy
 
 ## Purpose
 
-The RealtAsia organisation preserves the source and engineering history of the RealtAsia social-property platform developed and operated between 2012 and 2014.
+The realTasia organisation preserves the source and engineering history of the realTasia social-property platform developed and operated between 2012 and 2014.
 
 The archive has two simultaneous duties:
 
