@@ -16,9 +16,9 @@ The `realtasia` GitHub organisation and its public `.github` repository were cre
 
 ### Logo provenance
 
-The restored file is a byte-for-byte copy of [`img/realtlogo5.png`](https://github.com/pipewrk/app-rta/blob/a1d8ac77b09f9bb945c0ed1e308698e8f79166e4/img/realtlogo5.png) from the private archival master of `app-rta`.
+The restored file is a byte-for-byte copy of `img/realtlogo5.png` from the private archival master of `app-rta`.
 
-Its first visible Git provenance is the repository's 6 August 2013 import commit, [“Removed weird unwanted stuff from repo” (`a1d8ac7`)](https://github.com/pipewrk/app-rta/commit/a1d8ac77b09f9bb945c0ed1e308698e8f79166e4). That commit establishes when the asset entered this surviving Git history; it does not claim that the logo itself was designed that day.
+Its first visible Git provenance is the repository's 6 August 2013 import commit, “Removed weird unwanted stuff from repo” (`a1d8ac7`). The identifier is a private archival reference. That commit establishes when the asset entered this surviving Git history; it does not claim that the logo itself was designed that day.
 
 The source and public copies have the same Git blob SHA:
 
@@ -55,14 +55,31 @@ The profile briefly described the archive through temporary workflow states such
 
 The archive has no ceremonial completion state. Its landing pages describe the record itself; ongoing publication work belongs in this log.
 
+## 7 September 2026 — single-snapshot publication model adopted
+
+The source-publication model was narrowed to minimise risk and avoid altering the private archival repositories. Each public source repository contains exactly one modern root commit holding a sanitised snapshot. Original commit objects, parent relationships, authorship metadata and historical file states are not published.
+
+Private source repositories and their branches remain untouched. Transformation records, verification evidence and any source-to-snapshot mappings remain private because they can disclose the material removed from publication.
+
+| Repository | Public snapshot commit | Publication note |
+|---|---|---|
+| [`app-rta`](https://github.com/realtasia/app-rta) | [`8431dab`](https://github.com/realtasia/app-rta/commit/8431dabd6c2d16bde490d1807061203b387cbb00) | Sanitised application snapshot |
+| [`api-rta`](https://github.com/realtasia/api-rta) | [`4b87aea`](https://github.com/realtasia/api-rta/commit/4b87aea160a860c85a8e5d7057e4302710fed156) | Sanitised API snapshot |
+| [`common-rta`](https://github.com/realtasia/common-rta) | [`fd54b4d`](https://github.com/realtasia/common-rta/commit/fd54b4d5d2d6a114859e3ef6e8ffca6312f46639) | Historical snapshot with unresolved third-party provenance documented in-repository |
+| [`queue-rta`](https://github.com/realtasia/queue-rta) | [`1a09ee0`](https://github.com/realtasia/queue-rta/commit/1a09ee042425f7939cc9edeae602df790451528b) | Sanitised queue-worker snapshot |
+| [`sockets-rta`](https://github.com/realtasia/sockets-rta) | [`938ac2d`](https://github.com/realtasia/sockets-rta/commit/938ac2ddf369fec215a093238fc3cd87cd417e93) | Historical snapshot with upstream provenance caveat documented in-repository |
+| [`deployment-rta`](https://github.com/realtasia/deployment-rta) | [`b873a56`](https://github.com/realtasia/deployment-rta/commit/b873a56c7406e38eafc0dec88bd5f434c437564f) | Sanitised deployment snapshot |
+
+All six final trees passed a checksum-verified Gitleaks v8.30.1 scan with no findings before publication. Each public repository was independently checked to contain one commit.
+
 ## Rules for future entries
 
-Every public-history rewrite must record:
+Every public snapshot must record:
 
-- the affected repository and original commit;
-- the corresponding public commit, using the rewrite map;
+- the private source repository and source revision;
+- the corresponding public snapshot commit;
 - what changed;
 - why the change was required;
-- whether authorship, dates, messages or topology changed.
+- the verification applied before publication.
 
 Routine documentation commits should identify themselves plainly as modern editorial work.

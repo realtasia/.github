@@ -1,6 +1,6 @@
 # realTasia public archive
 
-This repository supplies the organisation profile, publication policy, archive log and shared presentation assets for the [realTasia source archive](https://github.com/realtasia).
+This repository supplies the organisation profile, publication policy, archive log and shared presentation assets for the [realTasia source archive](https://github.com/realtasia). Each source repository is published as one sanitised root snapshot; the complete surviving histories remain private and unchanged.
 
 - [Organisation profile](https://github.com/realtasia)
 - [Archive and editorial policy](./ARCHIVE_POLICY.md)

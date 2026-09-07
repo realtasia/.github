@@ -7,7 +7,7 @@ The realTasia organisation preserves the source and engineering history of the r
 The archive has two simultaneous duties:
 
 1. preserve the strongest possible historical record of the software;
-2. prevent the publication of personal data, credentials, private operational material or source that cannot lawfully be licensed.
+2. prevent the publication of personal data, credentials and private operational material while documenting unresolved third-party provenance honestly.
 
 Neither duty is permitted to quietly consume the other.
 
@@ -19,11 +19,11 @@ The surviving original repositories remain private and unchanged. They are the e
 
 No sanitisation, documentation work or public-release preparation is performed directly on those masters.
 
-### Public archival mirrors
+### Public archival snapshots
 
-The public repositories are derived mirrors. They retain the original history wherever publication permits.
+Each public source repository is a derived snapshot with exactly one root commit. Original Git objects, branch history and contributor metadata remain in the private archival master and are not reachable from the public repository.
 
-A public mirror may differ from its private master because a historical revision contained personal information, authentication material, credentials, production records, private communications, operational logs or third-party material without a suitable redistribution right.
+A public snapshot differs from its private master where the source contained personal information, authentication material, credentials, production records, private communications or operational logs. Third-party material with unresolved provenance is removed where practical or retained only with an explicit historical-archive caveat and no repository-level licence.
 
 ### Modern editorial material
 
@@ -31,30 +31,27 @@ READMEs, architectural guides, annotated histories, diagrams and sanitisation re
 
 They must never be represented as original project documentation.
 
-## History-preservation order
+## Snapshot-preservation order
 
-When preparing a public mirror, preservation is prioritised as follows:
+When preparing a public snapshot, preservation is prioritised as follows:
 
-1. author and committer timestamps;
-2. original commit messages;
-3. authorship;
-4. parentage and branch topology;
-5. executable source structure;
+1. first-party executable source structure;
+2. architecture and behaviour that can be evidenced safely;
+3. clearly identified modern commentary and provenance;
+4. first-party assets with a defensible publication basis;
+5. licensed third-party material with its notices;
 6. incidental binary and generated material.
 
-A commit receives a new object identifier whenever its contents or ancestry must change. That is an unavoidable property of Git, not an attempt to manufacture or obscure history.
+The complete Git history is preserved only in the unchanged private master. Private transformation records identify the source refs, reviewed paths and sanitisation work used to produce the public snapshot.
 
-The rewrite map produced during sanitisation is retained with the private archival material.
+## Required snapshot documentation
 
-## Required documentation for a rewritten commit
+Each repository's sanitisation record must state:
 
-When a historical commit must be altered for publication, the repository's sanitisation record must state:
-
-- the public commit;
-- the original commit date and message;
+- the source repository and snapshot model;
 - the affected path or category of values;
 - the reason for alteration;
-- whether the path was removed, redacted or replaced with synthetic data;
+- whether material was omitted, redacted or replaced with synthetic data;
 - whether application behaviour was affected.
 
 The public record should identify categories rather than repeat the sensitive values that required removal.
@@ -65,7 +62,7 @@ Modern technical commentary should be architecture-led and readable as a standal
 
 Material claims should identify their evidence through one or more of:
 
-- a linked historical commit;
+- an archival commit identifier retained in the private master;
 - a linked source file;
 - a small, relevant source excerpt;
 - a cross-repository event path;
@@ -79,7 +76,7 @@ Historical defects may be discussed directly. Missing modern conventions are not
 
 Real people are not part of the public artefact.
 
-Public history must exclude identifiable records concerning users, property agents, staff, sales prospects and counterparties. This includes names, contact details, professional identifiers, photographs, biographies, addresses, messages, interactions, tokens, payments and any combinations that could reasonably identify a person.
+Public snapshots must exclude identifiable records concerning users, property agents, staff, sales prospects and counterparties. This includes names, contact details, professional identifiers, photographs, biographies, addresses, messages, interactions, tokens, payments and any combinations that could reasonably identify a person.
 
 Hashing or pseudonymising predictable identifiers is insufficient. Where a source example is architecturally useful, it should be replaced with clearly synthetic data while preserving the schema and behaviour.
 
@@ -87,13 +84,13 @@ Hashing or pseudonymising predictable identifiers is insufficient. Where a sourc
 
 All credentials are removed even where their accounts and infrastructure no longer exist.
 
-Database dumps, private keys, session collections, access tokens and comparable material are purged from every reachable public revision. Removing a file only from the current tree is insufficient.
+Database dumps, private keys, session collections, access tokens and comparable material are excluded from the snapshot. The public repository must contain no older Git object through which excluded material remains reachable.
 
 ## Third-party source and assets
 
 Authorship does not automatically establish the right to relicense every file in a historical repository.
 
-Vendored libraries retain their original notices and licences where redistribution is permitted. Unlicensed templates, images, fonts or other third-party material are removed or separately accounted for.
+Vendored libraries retain their original notices and licences where redistribution is permitted. Unlicensed templates, images, fonts or other third-party material are removed where practical or separately accounted for as unresolved historical material.
 
 No repository receives an open-source licence until the relevant ownership and dependency review is complete.
 
@@ -108,20 +105,20 @@ Each repository will maintain:
 - `SANITISATION.md` for publication changes;
 - links back to this organisation-level policy.
 
-The archival project itself is therefore reviewable through Git rather than existing only as an undocumented transformation.
+The public snapshot documents its transformation, while the organisation publication log records the archive-level decision and release.
 
 ## Status language
 
 The following terms have fixed meanings:
 
 - **Original**: an untouched private archival master.
-- **Sanitised**: history reviewed and rewritten where publication required.
+- **Sanitised**: a snapshot reviewed and transformed where publication required.
 - **Editorial**: material added after the historical development period.
 - **Synthetic**: invented replacement data carrying no real person's identity.
-- **Published**: a repository that has passed privacy, secret and rights review and is publicly visible.
+- **Published**: a repository that has passed privacy and secret review, documents any unresolved rights caveats, and is publicly visible.
 
 ## Governing principle
 
 Preserve the engineering record. Remove the former occupants.
 
-The architecture belongs in public history. Their data does not.
+The architecture belongs in the public snapshot. Their data does not.

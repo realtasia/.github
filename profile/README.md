@@ -6,16 +6,16 @@
 
 ### The Right Now Real Estate
 
-**A live social-property platform built and operated in Singapore. Its surviving Git history runs from 2012 to 2014.**
+**A live social-property platform built and operated in Singapore from 2012 to 2014.**
 
-![Period](https://img.shields.io/badge/surviving_history-2012%E2%80%932014-7c3aed)
+![Period](https://img.shields.io/badge/operated-2012%E2%80%932014-7c3aed)
 ![Repositories](https://img.shields.io/badge/system-6_repositories-2563eb)
 ![Status](https://img.shields.io/badge/status-preserved_archive-d97706)
 ![Source](https://img.shields.io/badge/source-pre--AI-059669)
 
 </div>
 
-This is the public source archive of realTasia: six repositories, their surviving histories, and modern technical commentary tied to the commits it discusses.
+This is the public source archive of realTasia: six sanitised source snapshots and modern technical commentary tied to private archival commit identifiers.
 
 ## What was realTasia?
 
@@ -53,37 +53,37 @@ The diagram is a modern reading aid. The architecture is historical.
 
 The product itself: the hybrid PHP and JavaScript application, browser-side domain model, listing workflow, conversations, search, media and interface behaviour.
 
-[Read the annotated commit history](https://github.com/realtasia/app-rta/blob/main/COMMIT_COMMENTARY.md)
+[Read the archival commit commentary](https://github.com/realtasia/app-rta/blob/main/COMMIT_COMMENTARY.md)
 
 ### [`api-rta`](https://github.com/realtasia/api-rta)
 
 OAuth, resources, permissions, interactions and the rules connecting people, companies, properties and activity.
 
-[Read the annotated commit history](https://github.com/realtasia/api-rta/blob/main/COMMIT_COMMENTARY.md)
+[Read the archival commit commentary](https://github.com/realtasia/api-rta/blob/main/COMMIT_COMMENTARY.md)
 
 ### [`common-rta`](https://github.com/realtasia/common-rta)
 
 Shared framework and domain code, including Ticker feed materialisation and the notification machinery used by the API and workers.
 
-[Read the annotated commit history](https://github.com/realtasia/common-rta/blob/main/COMMIT_COMMENTARY.md)
+[Read the archival commit commentary](https://github.com/realtasia/common-rta/blob/main/COMMIT_COMMENTARY.md)
 
 ### [`queue-rta`](https://github.com/realtasia/queue-rta)
 
 Durable asynchronous work: projecting social activity into feeds, constructing recipient-specific notifications and dispatching downstream delivery.
 
-[Read the annotated commit history](https://github.com/realtasia/queue-rta/blob/main/COMMIT_COMMENTARY.md)
+[Read the archival commit commentary](https://github.com/realtasia/queue-rta/blob/main/COMMIT_COMMENTARY.md)
 
 ### [`sockets-rta`](https://github.com/realtasia/sockets-rta)
 
 The narrow live-delivery edge between durable notification state and connected browsers. A small service displaying the increasingly rare discipline of knowing exactly what it was for.
 
-[Read the annotated commit history](https://github.com/realtasia/sockets-rta/blob/main/COMMIT_COMMENTARY.md)
+[Read the archival commit commentary](https://github.com/realtasia/sockets-rta/blob/main/COMMIT_COMMENTARY.md)
 
 ### [`deployment-rta`](https://github.com/realtasia/deployment-rta)
 
 Provisioning, Nginx, process management, S3 delivery and the automation that turned six repositories into a running product.
 
-[Read the annotated commit history](https://github.com/realtasia/deployment-rta/blob/main/COMMIT_COMMENTARY.md)
+[Read the archival commit commentary](https://github.com/realtasia/deployment-rta/blob/main/COMMIT_COMMENTARY.md)
 
 ## Where to start
 
@@ -106,16 +106,16 @@ The archive does not use those dates to retrofit novelty. It preserves the code,
 
 ## Provenance
 
-The public repositories are privacy-sanitised mirrors of sealed archival masters. Commit dates, messages, authorship and parent relationships are preserved wherever the contents permit.
+The public repositories are privacy-sanitised, single-commit snapshots derived from sealed private archival masters. The complete surviving histories remain private and unchanged.
 
-Sanitisation changes a commit SHA. Every necessary deviation records:
+Each public repository contains exactly one modern root commit. Its `SANITISATION.md` records:
 
-1. the original archival commit;
-2. the corresponding public commit;
-3. what changed and why;
-4. whether dates, authorship, messages or topology were affected.
+1. the private source repository and source revision;
+2. the categories removed or replaced;
+3. why each change was required;
+4. the checks applied to the public snapshot.
 
-Modern commentary identifies itself as modern and links to the public commits it discusses. Historical source remains historical source.
+Modern commentary identifies itself as modern. Historical commit IDs are retained as private archival references, not as public Git objects or links.
 
 The original orange wordmark demonstrates the standard. Its public copy is byte-for-byte identical to the asset in the archival `app-rta` master. Both have Git blob SHA `ddfed7c71f874d9cb2efbaf3a1c8cba9bd3e4d64`.
 
@@ -127,6 +127,6 @@ Read the [archive and editorial policy](https://github.com/realtasia/.github/blo
 
 Original engineering by [Jason Nathan](https://github.com/pipewrk).
 
-**Preserved with its timestamps, architecture and magnificent commit messages intact.**
+**Its architecture and magnificent commit messages, preserved without publishing the private history.**
 
 </div>
