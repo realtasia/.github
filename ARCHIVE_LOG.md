@@ -68,7 +68,7 @@ Private source repositories and their branches remain untouched. Transformation 
 | [`common-rta`](https://github.com/realtasia/common-rta) | [`fd54b4d`](https://github.com/realtasia/common-rta/commit/fd54b4d5d2d6a114859e3ef6e8ffca6312f46639) | Historical snapshot with unresolved third-party provenance documented in-repository |
 | [`queue-rta`](https://github.com/realtasia/queue-rta) | [`1a09ee0`](https://github.com/realtasia/queue-rta/commit/1a09ee042425f7939cc9edeae602df790451528b) | Sanitised queue-worker snapshot |
 | [`sockets-rta`](https://github.com/realtasia/sockets-rta) | [`938ac2d`](https://github.com/realtasia/sockets-rta/commit/938ac2ddf369fec215a093238fc3cd87cd417e93) | Historical snapshot with upstream provenance caveat documented in-repository |
-| [`deployment-rta`](https://github.com/realtasia/deployment-rta) | [`9d2f028`](https://github.com/realtasia/deployment-rta/commit/9d2f028633dc256990c01dfa3d6ff949bde20755) | Sanitised deployment snapshot with 6,994 preserved `pages` records, synthetic OAuth bootstrap and deduplicated MongoDB indexes |
+| [`deployment-rta`](https://github.com/realtasia/deployment-rta) | [`69c1da1`](https://github.com/realtasia/deployment-rta/commit/69c1da12347748a189fdd232d52e0a3ecabb5aa8) | Sanitised deployment snapshot with 6,994 `pages` records, 265,678 `singpost` address-reference records, synthetic OAuth bootstrap and deduplicated MongoDB indexes |
 
 All six final trees passed a checksum-verified Gitleaks v8.30.1 scan with no findings before publication. Each public repository was independently checked to contain one commit.
 
