@@ -72,6 +72,17 @@ Private source repositories and their branches remain untouched. Transformation 
 
 All six final trees passed a checksum-verified Gitleaks v8.30.1 scan with no findings before publication. Each public repository was independently checked to contain one commit.
 
+## 17 November 2026 — historical commits restored
+
+The single-snapshot approach removed the public evidence behind the commentary. The archive is restoring historical commits and their commentary links while retaining the modern documentation as the final archival change. The private masters remain untouched.
+
+| Repository | Public history |
+|---|---|
+| [`app-rta`](https://github.com/realtasia/app-rta) | Original historical commits restored; linked commentary and current documentation preserved. |
+| [`sockets-rta`](https://github.com/realtasia/sockets-rta) | Original historical commits restored; linked commentary and current documentation preserved. |
+
+The remaining repositories retain their earlier public snapshots. The historical snapshots described in the September entry above record what was published at that time.
+
 ## Rules for future entries
 
 Every public snapshot must record:
