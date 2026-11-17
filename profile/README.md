@@ -106,7 +106,7 @@ The archive does not use those dates to retrofit novelty. It preserves the code,
 
 ## Provenance
 
-The private archival masters remain untouched. [app-rta](https://github.com/realtasia/app-rta) and [sockets-rta](https://github.com/realtasia/sockets-rta) now include their original historical commits and linked commentary alongside the modern archive documentation. The other repositories retain their earlier public snapshots.
+The private archival masters remain untouched. [app-rta](https://github.com/realtasia/app-rta) and [sockets-rta](https://github.com/realtasia/sockets-rta) now include their original master-branch commits and linked commentary alongside the modern archive documentation. The other repositories retain their earlier public snapshots.
 
 Each `SANITISATION.md` describes the changes made to its snapshot. The [publication log](https://github.com/realtasia/.github/blob/main/ARCHIVE_LOG.md) records the restoration of historical commits and links.
 
