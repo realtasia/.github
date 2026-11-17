@@ -15,7 +15,7 @@
 
 </div>
 
-This is the public source archive of realTasia: six sanitised source snapshots and modern technical commentary tied to private archival commit identifiers.
+This is the public source archive of realTasia: six source repositories and modern technical commentary grounded in their historical commits.
 
 ## What was realTasia?
 
@@ -106,16 +106,9 @@ The archive does not use those dates to retrofit novelty. It preserves the code,
 
 ## Provenance
 
-The public repositories are privacy-sanitised, single-commit snapshots derived from sealed private archival masters. The complete surviving histories remain private and unchanged.
+The private archival masters remain untouched. [app-rta](https://github.com/realtasia/app-rta) and [sockets-rta](https://github.com/realtasia/sockets-rta) now include their original historical commits and linked commentary alongside the modern archive documentation. The other repositories retain their earlier public snapshots.
 
-Each public repository contains exactly one modern root commit. Its `SANITISATION.md` records:
-
-1. the private source repository and source revision;
-2. the categories removed or replaced;
-3. why each change was required;
-4. the checks applied to the public snapshot.
-
-Modern commentary identifies itself as modern. Historical commit IDs are retained as private archival references, not as public Git objects or links.
+Each `SANITISATION.md` describes the changes made to its snapshot. The [publication log](https://github.com/realtasia/.github/blob/main/ARCHIVE_LOG.md) records the restoration of historical commits and links.
 
 The original orange wordmark demonstrates the standard. Its public copy is byte-for-byte identical to the asset in the archival `app-rta` master. Both have Git blob SHA `ddfed7c71f874d9cb2efbaf3a1c8cba9bd3e4d64`.
 
@@ -127,6 +120,6 @@ Read the [archive and editorial policy](https://github.com/realtasia/.github/blo
 
 Original engineering by [Jason Nathan](https://github.com/pipewrk).
 
-**Its architecture and magnificent commit messages, preserved without publishing the private history.**
+**Its architecture and magnificent commit messages, preserved with their history.**
 
 </div>
