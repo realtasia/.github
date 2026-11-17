@@ -85,7 +85,18 @@ The single-snapshot approach removed the public evidence behind the commentary. 
 | [`sockets-rta`](https://github.com/realtasia/sockets-rta) | Original master-branch commits restored. |
 | [`deployment-rta`](https://github.com/realtasia/deployment-rta) | Historical commits restored; identifying data and credential values redacted. |
 
-Each repository's `SANITISATION.md` identifies the changes and affected commits. Rewriting changes commit identifiers, so commentary links point to the corresponding public commits. The historical snapshots described in the September entry above record what was published at that time.
+Each repository's `SANITISATION.md` identifies the changes and affected commits. Rewriting changes commit identifiers, so commentary links point to the corresponding public commits. The snapshot identifiers in the September entry record what was published at that time; those superseded commit links may cease to resolve after GitHub cleans up unreferenced objects.
+
+The current public documentation commits are:
+
+| Repository | Current documentation commit |
+|---|---|
+| `app-rta` | [`7ddb298`](https://github.com/realtasia/app-rta/commit/7ddb2981e4d35237104ec399fff8a3b97e294b44) |
+| `api-rta` | [`f338707`](https://github.com/realtasia/api-rta/commit/f33870713fbdfd9fe5ac17369487e73647022246) |
+| `common-rta` | [`392b441`](https://github.com/realtasia/common-rta/commit/392b441c3a02354144184a5e0e54ab8dde246c41) |
+| `queue-rta` | [`b12beca`](https://github.com/realtasia/queue-rta/commit/b12beca8e6c99be3f2e35c73e743573235bd1f42) |
+| `sockets-rta` | [`e7cbeed`](https://github.com/realtasia/sockets-rta/commit/e7cbeedbc28c318daf04bcadb5cde1139321eefb) |
+| `deployment-rta` | [`3e4f760`](https://github.com/realtasia/deployment-rta/commit/3e4f760747e4df170315ce40e01d9329ecc97499) |
 
 GitHub may retain cached views of superseded, unreferenced commits after a force push. Such views were still accessible after this rewrite; removal requires separate GitHub cleanup.
 
