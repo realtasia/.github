@@ -80,6 +80,7 @@ The single-snapshot approach removed the public evidence behind the commentary. 
 |---|---|
 | [`app-rta`](https://github.com/realtasia/app-rta) | Original master-branch commits restored; linked commentary and current documentation preserved. |
 | [`sockets-rta`](https://github.com/realtasia/sockets-rta) | Original master-branch commits restored; linked commentary and current documentation preserved. |
+| [`deployment-rta`](https://github.com/realtasia/deployment-rta) | Master-branch commits restored with identifying data redacted; linked commentary and current documentation preserved. |
 
 The remaining repositories retain their earlier public snapshots. The historical snapshots described in the September entry above record what was published at that time.
 
