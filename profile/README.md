@@ -106,9 +106,9 @@ The archive does not use those dates to retrofit novelty. It preserves the code,
 
 ## Provenance
 
-The private archival masters remain untouched. [app-rta](https://github.com/realtasia/app-rta) and [sockets-rta](https://github.com/realtasia/sockets-rta) include their original master-branch commits and linked commentary alongside the modern archive documentation. [deployment-rta](https://github.com/realtasia/deployment-rta) preserves its historical commits with identifying data redacted. The other repositories retain their earlier public snapshots.
+The private archival masters remain untouched. All six public repositories preserve their historical master-branch commit sequences and linked commentary, followed by the modern archive documentation. Where identifying data or credentials were redacted, the public commits have new identifiers.
 
-Each `SANITISATION.md` describes the changes made to its snapshot. The [publication log](https://github.com/realtasia/.github/blob/main/ARCHIVE_LOG.md) records the restoration of historical commits and links.
+Each `SANITISATION.md` describes the changes made to its public history and snapshot. The [publication log](https://github.com/realtasia/.github/blob/main/ARCHIVE_LOG.md) records the restoration of historical commits and links.
 
 The original orange wordmark demonstrates the standard. Its public copy is byte-for-byte identical to the asset in the archival `app-rta` master. Both have Git blob SHA `ddfed7c71f874d9cb2efbaf3a1c8cba9bd3e4d64`.
 

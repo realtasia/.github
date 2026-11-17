@@ -19,9 +19,9 @@ The surviving original repositories remain private and unchanged. They are the e
 
 No sanitisation, documentation work or public-release preparation is performed directly on those masters.
 
-### Public archival snapshots
+### Public archival history and snapshots
 
-Each public source repository is a derived snapshot with exactly one root commit. Original Git objects, branch history and contributor metadata remain in the private archival master and are not reachable from the public repository.
+Each public source repository preserves its historical master-branch commit sequence and contributor metadata, followed by a modern archival snapshot. Where identifying information or credentials are removed, rewritten commits receive new identifiers; the commentary links to the corresponding public commits.
 
 A public snapshot differs from its private master where the source contained personal information, authentication material, credentials, production records, private communications or operational logs. Third-party material with unresolved provenance is removed where practical or retained only with an explicit historical-archive caveat and no repository-level licence.
 
@@ -42,7 +42,7 @@ When preparing a public snapshot, preservation is prioritised as follows:
 5. licensed third-party material with its notices;
 6. incidental binary and generated material.
 
-The complete Git history is preserved only in the unchanged private master. Private transformation records identify the source refs, reviewed paths and sanitisation work used to produce the public snapshot.
+The unchanged private masters preserve the original Git objects. Public histories preserve the commit sequence with documented redactions; each repository records the affected material and corresponding public commits.
 
 ## Required snapshot documentation
 
@@ -62,7 +62,7 @@ Modern technical commentary should be architecture-led and readable as a standal
 
 Material claims should identify their evidence through one or more of:
 
-- an archival commit identifier retained in the private master;
+- a link to the corresponding public historical commit;
 - a linked source file;
 - a small, relevant source excerpt;
 - a cross-repository event path;
@@ -84,7 +84,7 @@ Hashing or pseudonymising predictable identifiers is insufficient. Where a sourc
 
 All credentials are removed even where their accounts and infrastructure no longer exist.
 
-Database dumps, private keys, session collections, access tokens and comparable material are excluded from the snapshot. The public repository must contain no older Git object through which excluded material remains reachable.
+Database dumps, private keys, session collections, access tokens and comparable material are excluded from the snapshot. Identifying data and credentials removed for publication must not remain in the reachable public branch history. GitHub may retain cached views of superseded commits until separate cleanup is completed.
 
 ## Third-party source and assets
 

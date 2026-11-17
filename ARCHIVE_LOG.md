@@ -18,7 +18,7 @@ The `realtasia` GitHub organisation and its public `.github` repository were cre
 
 The restored file is a byte-for-byte copy of `img/realtlogo5.png` from the private archival master of `app-rta`.
 
-Its first visible Git provenance is the repository's 6 August 2013 import commit, “Removed weird unwanted stuff from repo” (`a1d8ac7`). The identifier is a private archival reference. That commit establishes when the asset entered this surviving Git history; it does not claim that the logo itself was designed that day.
+Its first visible Git provenance is the repository's 6 August 2013 import commit, [“Removed weird unwanted stuff from repo”](https://github.com/realtasia/app-rta/commit/5507b8b2b2c2548f1c4b43a4cadaecefd2a99723). The corresponding private archival identifier is `a1d8ac7`. That commit establishes when the asset entered this surviving Git history; it does not claim that the logo itself was designed that day.
 
 The source and public copies have the same Git blob SHA:
 
@@ -74,15 +74,20 @@ All six final trees passed a checksum-verified Gitleaks v8.30.1 scan with no fin
 
 ## 17 November 2026 — historical commits restored
 
-The single-snapshot approach removed the public evidence behind the commentary. The archive is restoring historical commits and their commentary links while retaining the modern documentation as the final archival change. The private masters remain untouched.
+The single-snapshot approach removed the public evidence behind the commentary. All six repositories now preserve their historical master-branch commits and linked commentary, followed by one modern documentation and snapshot commit. The private masters remain untouched.
 
 | Repository | Public history |
 |---|---|
-| [`app-rta`](https://github.com/realtasia/app-rta) | Original master-branch commits restored; linked commentary and current documentation preserved. |
-| [`sockets-rta`](https://github.com/realtasia/sockets-rta) | Original master-branch commits restored; linked commentary and current documentation preserved. |
-| [`deployment-rta`](https://github.com/realtasia/deployment-rta) | Master-branch commits restored with identifying data redacted; linked commentary and current documentation preserved. |
+| [`app-rta`](https://github.com/realtasia/app-rta) | Historical commits restored; detected credential values redacted. |
+| [`api-rta`](https://github.com/realtasia/api-rta) | Historical commits restored; identifying data and detected credential values redacted. |
+| [`common-rta`](https://github.com/realtasia/common-rta) | Historical commits restored; detected credential values and key fixtures redacted. |
+| [`queue-rta`](https://github.com/realtasia/queue-rta) | Historical commits restored; detected credential values redacted. |
+| [`sockets-rta`](https://github.com/realtasia/sockets-rta) | Original master-branch commits restored. |
+| [`deployment-rta`](https://github.com/realtasia/deployment-rta) | Historical commits restored; identifying data and credential values redacted. |
 
-The remaining repositories retain their earlier public snapshots. The historical snapshots described in the September entry above record what was published at that time.
+Each repository's `SANITISATION.md` identifies the changes and affected commits. Rewriting changes commit identifiers, so commentary links point to the corresponding public commits. The historical snapshots described in the September entry above record what was published at that time.
+
+GitHub may retain cached views of superseded, unreferenced commits after a force push. Such views were still accessible after this rewrite; removal requires separate GitHub cleanup.
 
 ## Rules for future entries
 
